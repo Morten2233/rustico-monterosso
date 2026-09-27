@@ -1,6 +1,15 @@
 (function () {
   var bar = document.getElementById("bar");
-  function onScroll() { bar.classList.toggle("solid", window.scrollY > 40); }
+  var mbar = document.getElementById("mbar");
+  var hero = document.getElementById("top");
+  var contact = document.getElementById("kontakt");
+  function onScroll() {
+    bar.classList.toggle("solid", window.scrollY > 40);
+    var pastHero = window.scrollY > hero.offsetHeight * 0.7;
+    var r = contact.getBoundingClientRect();
+    var atContact = r.top < window.innerHeight && r.bottom > 0;
+    mbar.classList.toggle("show", pastHero && !atContact);
+  }
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 

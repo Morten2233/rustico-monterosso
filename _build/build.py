@@ -8,6 +8,11 @@ SITE = "https://morten2233.github.io/rustico-monterosso/"
 FORM_ENDPOINT = C["form_endpoint"]
 TALL = {"02", "06", "07", "10", "12", "15", "16", "19"}
 e = html.escape
+FLAGS = {
+    "de": '<svg class="flag" viewBox="0 0 5 3" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>',
+    "en": '<svg class="flag" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="uk"><path d="M0,0 v30 h60 v-30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" clip-path="url(#uk)"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3" clip-path="url(#uk)"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>',
+    "it": '<svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg>',
+}
 
 
 def page(lang):
@@ -17,7 +22,7 @@ def page(lang):
     langs = "".join(
         f'<a href="{base}{"" if l == "de" else l + "/"}" hreflang="{l}"'
         + (' aria-current="true"' if l == lang else "")
-        + f">{l.upper()}</a>"
+        + f">{FLAGS[l]}<span>{l.upper()}</span></a>"
         for l in ("de", "en", "it")
     )
     alts = "".join(
@@ -143,6 +148,7 @@ def page(lang):
   </div>
 </section>
 </main>
+<div class="mbar" id="mbar"><div><small>{e(t["price"])}</small><strong>165.000 €</strong></div><a href="#kontakt">{e(t["ctaVisit"])} →</a></div>
 <footer class="foot"><div class="wrap"><span>{e(t["footer"])}</span><a href="#top" aria-label="top">↑</a></div></footer>
 
 <div class="modal" id="videoModal" hidden><div class="modal-in"><button type="button" class="close" data-close>{e(t["close"])} ✕</button><video id="modalVideo" controls playsinline></video></div></div>
