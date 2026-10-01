@@ -290,7 +290,10 @@
         "Abstellraum im Holzhaus",
         "Satellitenanschluss",
         "Städtisches Wasser und eigene Quelle, Strom"
-      ]
+      ],
+      "areaTitle": "Die Nachbarschaft",
+      "areaText": "Wenige Schritte entfernt liegt das Santuario Nostra Signora di Soviore, einer der ältesten Wallfahrtsorte Liguriens, mit Hotel und Restaurant.",
+      "drawCap": "Schnitt, Westansicht und Obergeschoss mit Lage der Klimageräte"
     },
     "en": {
       "metaTitle": "Rustico with sea view in Monterosso al Mare · €185,000",
@@ -428,7 +431,10 @@
         "Storage room in the wooden cabin",
         "Satellite connection",
         "Mains water and own spring, electricity"
-      ]
+      ],
+      "areaTitle": "The neighbourhood",
+      "areaText": "Just a few steps away lies the Santuario Nostra Signora di Soviore, one of the oldest pilgrimage sites in Liguria, with hotel and restaurant.",
+      "drawCap": "Section, west elevation and upper floor showing the air conditioning units"
     },
     "it": {
       "metaTitle": "Rustico con vista mare a Monterosso al Mare · 185.000 €",
@@ -566,9 +572,50 @@
         "Ripostiglio nella casetta in legno",
         "Allacciamento satellitare",
         "Acqua comunale e sorgente propria, elettricità"
-      ]
+      ],
+      "areaTitle": "I dintorni",
+      "areaText": "A pochi passi si trova il Santuario Nostra Signora di Soviore, uno dei luoghi di pellegrinaggio più antichi della Liguria, con hotel e ristorante.",
+      "drawCap": "Sezione, prospetto ovest e primo piano con la posizione dei climatizzatori"
     }
   },
   "price_display": "185.000 €",
-  "price_num": "185000"
+  "price_num": "185000",
+  "area_photos": [
+    {
+      "n": "26",
+      "de": "Kirchturm des Santuario di Soviore",
+      "en": "Bell tower of the Santuario di Soviore",
+      "it": "Campanile del Santuario di Soviore"
+    },
+    {
+      "n": "27",
+      "de": "Das ehemalige Kloster, heute Hotel und Restaurant",
+      "en": "The former monastery, now hotel and restaurant",
+      "it": "L'ex convento, oggi hotel e ristorante"
+    },
+    {
+      "n": "28",
+      "de": "Allee zum Santuario",
+      "en": "Avenue to the Santuario",
+      "it": "Viale verso il Santuario"
+    },
+    {
+      "n": "29",
+      "de": "Gepflasterter Weg beim Kloster",
+      "en": "Paved path by the monastery",
+      "it": "Sentiero lastricato vicino al convento"
+    },
+    {
+      "n": "30",
+      "de": "Kleine Kapelle in der Nähe",
+      "en": "Small chapel nearby",
+      "it": "Piccola cappella nei dintorni"
+    },
+    {
+      "n": "31",
+      "de": "Gasse mit Treppe am Kloster",
+      "en": "Lane with steps by the monastery",
+      "it": "Vicolo con scalinata vicino al convento"
+    }
+  ]
 }

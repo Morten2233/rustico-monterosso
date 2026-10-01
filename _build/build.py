@@ -6,7 +6,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 C = json.load(open(os.path.join(ROOT, "_build", "content.json"), encoding="utf-8"))
 SITE = "https://morten2233.github.io/rustico-monterosso/"
 FORM_ENDPOINT = C["form_endpoint"]
-TALL = {"02", "06", "07", "10", "12", "15", "16", "19", "25"}
+TALL = {"02", "06", "07", "10", "12", "15", "16", "19", "25", "26", "27", "28", "29", "30", "31"}
 e = html.escape
 FLAGS = {
     "de": '<svg class="flag" viewBox="0 0 5 3" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>',
@@ -43,7 +43,14 @@ def page(lang):
         f'height="{1600 if n in TALL else 1200}" loading="lazy"><span>{e(a)}</span></button>'
         for i, (n, a) in enumerate((p["n"], p[lang]) for p in C["photos"])
     )
-    photos_js = json.dumps([{"src": f'{base}photos/{p["n"]}.jpg', "alt": p[lang]} for p in C["photos"]], ensure_ascii=False)
+    allp = C["photos"] + C["area_photos"]
+    photos_js = json.dumps([{"src": f'{base}photos/{p["n"]}.jpg', "alt": p[lang]} for p in allp], ensure_ascii=False)
+    off = len(C["photos"])
+    area_tiles = "".join(
+        f'<button type="button" class="tile" data-i="{off + i}" aria-label="{e(p[lang])}">'
+        f'<img src="{base}photos/t_{p["n"]}.jpg" alt="{e(p[lang])}" width="1200" height="1600" loading="lazy"><span>{e(p[lang])}</span></button>'
+        for i, p in enumerate(C["area_photos"])
+    )
     ld = {
         "@context": "https://schema.org",
         "@type": "Offer",
@@ -112,6 +119,7 @@ def page(lang):
   <div class="plan-copy"><h2>{e(t["planTitle"])}</h2><p>{e(t["planText"])}</p><a class="map-link dark" href="{base}grundriss.pdf" target="_blank" rel="noopener">{e(t["planLink"])} ↗</a>
     <h3 class="equip-title">{e(t["equipTitle"])}</h3><ul class="equip">{equip}</ul></div>
   <a class="plan-img" href="{base}grundriss.png" target="_blank" rel="noopener"><img src="{base}grundriss.png" alt="{e(t["planTitle"])}" width="880" height="1260" loading="lazy"></a>
+  <figure class="draw"><a href="{base}schnitt.jpg" target="_blank" rel="noopener"><img src="{base}schnitt.jpg" alt="{e(t["drawCap"])}" width="1289" height="752" loading="lazy"></a><figcaption>{e(t["drawCap"])}</figcaption></figure>
 </section>
 
 <section class="gallery" id="bilder">
@@ -127,6 +135,7 @@ def page(lang):
     <ul class="dist">{dist}</ul>
   </div>
   <div class="wrap"><img class="wide" src="{base}photos/20.jpg" alt="{e(next(p[lang] for p in C["photos"] if p["n"] == "20"))}" loading="lazy" width="1600" height="1200"></div>
+  <div class="wrap area"><h3>{e(t["areaTitle"])}</h3><p>{e(t["areaText"])}</p><div class="area-grid">{area_tiles}</div></div>
 </section>
 
 <section class="buy wrap" id="kauf">
