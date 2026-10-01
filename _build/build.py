@@ -6,7 +6,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 C = json.load(open(os.path.join(ROOT, "_build", "content.json"), encoding="utf-8"))
 SITE = "https://morten2233.github.io/rustico-monterosso/"
 FORM_ENDPOINT = C["form_endpoint"]
-TALL = {"02", "06", "07", "10", "12", "15", "16", "19"}
+TALL = {"02", "06", "07", "10", "12", "15", "16", "19", "25"}
 e = html.escape
 FLAGS = {
     "de": '<svg class="flag" viewBox="0 0 5 3" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>',
@@ -32,6 +32,7 @@ def page(lang):
     facts = "".join(f"<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>" for k, v in t["facts"])
     intro = "".join(f"<p>{e(p)}</p>" for p in t["intro"])
     dist = "".join(f"<li><span>{e(k)}</span><span>{e(v)}</span></li>" for k, v in t["dist"])
+    equip = "".join(f"<li>{e(x)}</li>" for x in t["equip"])
     steps = "".join(
         f"<li><span class=\"num\">{i + 1}</span><h3>{e(k)}</h3><p>{e(v)}</p></li>"
         for i, (k, v) in enumerate(t["steps"])
@@ -47,7 +48,7 @@ def page(lang):
         "@context": "https://schema.org",
         "@type": "Offer",
         "name": t["title"],
-        "price": "165000",
+        "price": C["price_num"],
         "priceCurrency": "EUR",
         "url": url,
         "image": SITE + "og.jpg",
@@ -95,7 +96,7 @@ def page(lang):
     <h1>{e(t["title"])}</h1>
     <p class="lead">{e(t["lead"])}</p>
     <div class="hero-row">
-      <div class="price"><small>{e(t["price"])}</small><strong>165.000 €</strong></div>
+      <div class="price"><small>{e(t["price"])}</small><strong>{C["price_display"]}</strong></div>
       <a class="visit-cta" href="#kontakt">{e(t["ctaVisit"])} <span aria-hidden="true">→</span></a>
       <button type="button" class="sound-cta" id="soundBtn"><span class="play" aria-hidden="true"><svg width="12" height="14" viewBox="0 0 12 14"><path d="M1 1l10 6-10 6z" fill="currentColor"/></svg></span>{e(t["ctaSound"])}</button>
     </div>
@@ -105,6 +106,12 @@ def page(lang):
 <section class="intro wrap" id="haus">
   <div><h2>{e(t["introTitle"])}</h2><div class="prose">{intro}</div></div>
   <dl class="facts">{facts}</dl>
+</section>
+
+<section class="plan wrap" id="grundriss">
+  <div class="plan-copy"><h2>{e(t["planTitle"])}</h2><p>{e(t["planText"])}</p><a class="map-link dark" href="{base}grundriss.pdf" target="_blank" rel="noopener">{e(t["planLink"])} ↗</a>
+    <h3 class="equip-title">{e(t["equipTitle"])}</h3><ul class="equip">{equip}</ul></div>
+  <a class="plan-img" href="{base}grundriss.png" target="_blank" rel="noopener"><img src="{base}grundriss.png" alt="{e(t["planTitle"])}" width="880" height="1260" loading="lazy"></a>
 </section>
 
 <section class="gallery" id="bilder">
@@ -119,7 +126,7 @@ def page(lang):
     <div><h2>{e(t["locTitle"])}</h2><p>{e(t["locText"])}</p><a class="map-link" href="{C["maps_url"]}" target="_blank" rel="noopener noreferrer">{e(t["mapLink"])} ↗</a></div>
     <ul class="dist">{dist}</ul>
   </div>
-  <div class="wrap"><img class="wide" src="{base}photos/20.jpg" alt="{e(C["photos"][19][lang])}" loading="lazy" width="1600" height="1200"></div>
+  <div class="wrap"><img class="wide" src="{base}photos/20.jpg" alt="{e(next(p[lang] for p in C["photos"] if p["n"] == "20"))}" loading="lazy" width="1600" height="1200"></div>
 </section>
 
 <section class="buy wrap" id="kauf">
@@ -148,7 +155,7 @@ def page(lang):
   </div>
 </section>
 </main>
-<div class="mbar" id="mbar"><div><small>{e(t["price"])}</small><strong>165.000 €</strong></div><a href="#kontakt">{e(t["ctaVisit"])} →</a></div>
+<div class="mbar" id="mbar"><div><small>{e(t["price"])}</small><strong>{C["price_display"]}</strong></div><a href="#kontakt">{e(t["ctaVisit"])} →</a></div>
 <footer class="foot"><div class="wrap"><span>{e(t["footer"])}</span><a href="#top" aria-label="top">↑</a></div></footer>
 
 <div class="modal" id="videoModal" hidden><div class="modal-in"><button type="button" class="close" data-close>{e(t["close"])} ✕</button><video id="modalVideo" controls playsinline></video></div></div>

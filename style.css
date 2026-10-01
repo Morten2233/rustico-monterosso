@@ -211,3 +211,17 @@ h2 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 1.08; }
   .lb-stage img { max-height: 72svh; }
   .nav { width: 2.6rem; height: 2.6rem; top: auto; bottom: 1rem; transform: none; }
 }
+
+/* floor plan + features */
+.plan { display: grid; gap: 2.5rem; padding-bottom: 5rem; align-items: start; }
+@media (min-width: 900px) { .plan { grid-template-columns: 1fr 1fr; gap: 4rem; padding-bottom: 7rem; } }
+.plan-copy p { margin: 1.25rem 0 0; font-size: 1.05rem; line-height: 1.7; color: var(--ink-soft); max-width: 30rem; }
+.map-link.dark { color: var(--sea); border-color: var(--sea); }
+.map-link.dark:hover { color: var(--sea-deep); border-color: var(--sea-deep); }
+.equip-title { margin-top: 2.5rem; font-size: 1.6rem; }
+.equip { list-style: none; margin: 1rem 0 0; padding: 0; }
+.equip li { position: relative; padding: .55rem 0 .55rem 1.6rem; border-bottom: 1px solid var(--line); font-size: .98rem; color: var(--ink-soft); }
+.equip li::before { content: ""; position: absolute; left: 0; top: 1.05rem; width: .7rem; height: 2px; background: var(--olive); }
+.plan-img { display: block; background: #fff; border: 1px solid var(--line); padding: 1rem; cursor: zoom-in; }
+.plan-img img { width: 100%; height: auto; }
+@media (max-width: 767px) { .plan { padding-bottom: 3.5rem; gap: 2rem; } .equip-title { font-size: 1.35rem; } }

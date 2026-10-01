@@ -2,32 +2,168 @@
   "form_endpoint": "https://formsubmit.co/ajax/mb@brandmonks.de",
   "maps_url": "https://www.google.com/maps/search/?api=1&query=Santuario+Nostra+Signora+di+Soviore+Monterosso+al+Mare",
   "photos": [
-    {"n": "01", "de": "Zufahrt von der Straße mit Parkplatz", "en": "Access from the road with parking", "it": "Accesso dalla strada con parcheggio"},
-    {"n": "02", "de": "Gartenweg hinauf zum Steinhaus", "en": "Garden path up to the stone house", "it": "Sentiero verso la casa in pietra"},
-    {"n": "03", "de": "Weg mit Holzgeländer", "en": "Path with wooden railing", "it": "Sentiero con ringhiera in legno"},
-    {"n": "04", "de": "Terrasse aus Naturstein", "en": "Natural stone terrace", "it": "Terrazza in pietra naturale"},
-    {"n": "05", "de": "Das Rustico im Grünen", "en": "The rustico among the trees", "it": "Il rustico nel verde"},
-    {"n": "06", "de": "Haupthaus aus Naturstein", "en": "Main stone house", "it": "Casa principale in pietra"},
-    {"n": "07", "de": "Alte Steintreppe", "en": "Old stone stairs", "it": "Antica scala in pietra"},
-    {"n": "08", "de": "Ensemble mit Gästehaus aus Holz", "en": "Ensemble with wooden guest house", "it": "L'insieme con la casetta in legno"},
-    {"n": "09", "de": "Gästehaus aus Holz", "en": "Wooden guest house", "it": "Casetta per ospiti in legno"},
-    {"n": "10", "de": "Gang unter der Pergola", "en": "Walkway under the pergola", "it": "Passaggio sotto la pergola"},
-    {"n": "11", "de": "Überdachte Außenküche", "en": "Covered outdoor kitchen", "it": "Cucina esterna coperta"},
-    {"n": "12", "de": "Wohnraum mit Klimaanlage", "en": "Living room with air conditioning", "it": "Soggiorno con aria condizionata"},
-    {"n": "13", "de": "Wohnraum mit Fenster", "en": "Living room with window", "it": "Soggiorno con finestra"},
-    {"n": "14", "de": "Küchenregal", "en": "Kitchen shelves", "it": "Scaffali della cucina"},
-    {"n": "15", "de": "Innentreppe und Natursteinwand", "en": "Inner staircase and stone wall", "it": "Scala interna e muro in pietra"},
-    {"n": "16", "de": "Schlafzimmer", "en": "Bedroom", "it": "Camera da letto"},
-    {"n": "17", "de": "Badhaus", "en": "Bath house", "it": "Casetta del bagno"},
-    {"n": "18", "de": "Pergola mit Meerblick", "en": "Pergola with sea view", "it": "Pergola con vista mare"},
-    {"n": "19", "de": "Blick aus dem Fenster aufs Meer", "en": "View from the window to the sea", "it": "Vista mare dalla finestra"},
-    {"n": "20", "de": "Blick auf die Bucht von Monterosso", "en": "View over the bay of Monterosso", "it": "Vista sulla baia di Monterosso"}
+    {
+      "n": "01",
+      "de": "Zufahrt von der Straße mit Parkplatz",
+      "en": "Access from the road with parking",
+      "it": "Accesso dalla strada con parcheggio"
+    },
+    {
+      "n": "02",
+      "de": "Gartenweg hinauf zum Steinhaus",
+      "en": "Garden path up to the stone house",
+      "it": "Sentiero verso la casa in pietra"
+    },
+    {
+      "n": "03",
+      "de": "Weg mit Holzgeländer",
+      "en": "Path with wooden railing",
+      "it": "Sentiero con ringhiera in legno"
+    },
+    {
+      "n": "04",
+      "de": "Terrasse aus Naturstein",
+      "en": "Natural stone terrace",
+      "it": "Terrazza in pietra naturale"
+    },
+    {
+      "n": "05",
+      "de": "Das Rustico im Grünen",
+      "en": "The rustico among the trees",
+      "it": "Il rustico nel verde"
+    },
+    {
+      "n": "06",
+      "de": "Haupthaus aus Naturstein",
+      "en": "Main stone house",
+      "it": "Casa principale in pietra"
+    },
+    {
+      "n": "07",
+      "de": "Alte Steintreppe",
+      "en": "Old stone stairs",
+      "it": "Antica scala in pietra"
+    },
+    {
+      "n": "08",
+      "de": "Ensemble mit Gästehaus aus Holz",
+      "en": "Ensemble with wooden guest house",
+      "it": "L'insieme con la casetta in legno"
+    },
+    {
+      "n": "09",
+      "de": "Gästehaus aus Holz",
+      "en": "Wooden guest house",
+      "it": "Casetta per ospiti in legno"
+    },
+    {
+      "n": "10",
+      "de": "Gang unter der Pergola",
+      "en": "Walkway under the pergola",
+      "it": "Passaggio sotto la pergola"
+    },
+    {
+      "n": "11",
+      "de": "Überdachte Außenküche",
+      "en": "Covered outdoor kitchen",
+      "it": "Cucina esterna coperta"
+    },
+    {
+      "n": "12",
+      "de": "Wohnraum mit Klimaanlage",
+      "en": "Living room with air conditioning",
+      "it": "Soggiorno con aria condizionata"
+    },
+    {
+      "n": "13",
+      "de": "Wohnraum mit Fenster",
+      "en": "Living room with window",
+      "it": "Soggiorno con finestra"
+    },
+    {
+      "n": "14",
+      "de": "Küchenregal",
+      "en": "Kitchen shelves",
+      "it": "Scaffali della cucina"
+    },
+    {
+      "n": "15",
+      "de": "Innentreppe und Natursteinwand",
+      "en": "Inner staircase and stone wall",
+      "it": "Scala interna e muro in pietra"
+    },
+    {
+      "n": "16",
+      "de": "Schlafzimmer",
+      "en": "Bedroom",
+      "it": "Camera da letto"
+    },
+    {
+      "n": "17",
+      "de": "Badhaus",
+      "en": "Bath house",
+      "it": "Casetta del bagno"
+    },
+    {
+      "n": "22",
+      "de": "Neuer Verbindungsraum von außen, mit Meerblick",
+      "en": "New connecting room from outside, with sea view",
+      "it": "Nuovo locale di collegamento dall'esterno, con vista mare"
+    },
+    {
+      "n": "23",
+      "de": "Neuer Verbindungsraum im Ausbau",
+      "en": "New connecting room, being finished",
+      "it": "Nuovo locale di collegamento in fase di finitura"
+    },
+    {
+      "n": "24",
+      "de": "Neuer Verbindungsraum, Blick zur Tür",
+      "en": "New connecting room, view to the door",
+      "it": "Nuovo locale di collegamento, vista verso la porta"
+    },
+    {
+      "n": "25",
+      "de": "Durchgang zum Verbindungsraum",
+      "en": "Passage to the connecting room",
+      "it": "Passaggio verso il locale di collegamento"
+    },
+    {
+      "n": "18",
+      "de": "Pergola mit Meerblick",
+      "en": "Pergola with sea view",
+      "it": "Pergola con vista mare"
+    },
+    {
+      "n": "21",
+      "de": "Pergola-Gang mit Meerblick",
+      "en": "Pergola walkway with sea view",
+      "it": "Passaggio sotto la pergola con vista mare"
+    },
+    {
+      "n": "19",
+      "de": "Blick aus dem Fenster aufs Meer",
+      "en": "View from the window to the sea",
+      "it": "Vista mare dalla finestra"
+    },
+    {
+      "n": "20",
+      "de": "Blick auf die Bucht von Monterosso",
+      "en": "View over the bay of Monterosso",
+      "it": "Vista sulla baia di Monterosso"
+    }
   ],
   "t": {
     "de": {
-      "metaTitle": "Rustico mit Meerblick in Monterosso al Mare · 165.000 €",
+      "metaTitle": "Rustico mit Meerblick in Monterosso al Mare · 185.000 €",
       "metaDesc": "Komplett saniertes Rustico aus zwei Steinhäusern hoch über Monterosso, Cinque Terre. Parkplatz am Haus, 11 Minuten zum Strand.",
-      "nav": {"house": "Das Haus", "photos": "Bilder", "location": "Lage", "buy": "Kauf", "contact": "Anfrage"},
+      "nav": {
+        "house": "Das Haus",
+        "photos": "Bilder",
+        "location": "Lage",
+        "buy": "Kauf",
+        "contact": "Anfrage"
+      },
       "eyebrow": "Monterosso al Mare · Cinque Terre",
       "title": "Rustico-Ensemble hoch über Monterosso",
       "lead": "Zwei kleine, komplett sanierte Steinhäuser mit Blick auf die Bucht. Parkplatz direkt am Haus, 11 Minuten zum Strand.",
@@ -39,32 +175,133 @@
       "intro": [
         "Hoch über Monterosso liegt dieses komplett sanierte Rustico aus zwei kleinen Häusern, mit fantastischem Blick auf die Bucht von Monterosso.",
         "Absolute Alleinlage oberhalb eines ehemaligen Klosters, heute Restaurant und Hotel.",
-        "In den zwei Häusern erwarten Sie auf ca. 50 m² Wohnfläche zwei Zimmer und ein Bad, dazu eine offene, voll ausgestattete, hochwertige Küche mit Sitzplatz unter einer wetterschützenden Pergola."
+        "In den zwei Häusern erwarten Sie auf ca. 50 m² Wohnfläche zwei Zimmer und ein Bad, dazu eine offene, voll ausgestattete, hochwertige Küche mit Sitzplatz unter einer wetterschützenden Pergola.",
+        "Das hochwertige Mobiliar und die professionelle Außenküche sind im Kaufpreis enthalten. In Südlage mit unverbaubarem Blick auf die Bucht."
       ],
-      "facts": [["ca. 50 m²", "Wohnfläche"], ["2 Häuser", "Haupthaus und Badhaus"], ["2 Zimmer", "Wohnraum und Schlafzimmer"], ["1 Bad", "im eigenen Badhaus"], ["Außenküche", "unter der Pergola"], ["Gästehaus", "kleines Holzhaus"], ["Klimaanlage", "in den Räumen"], ["Parkplatz", "direkt am Haus"]],
+      "facts": [
+        [
+          "ca. 50 m²",
+          "Wohnfläche"
+        ],
+        [
+          "ca. 850 m²",
+          "Hanggrundstück in Südlage"
+        ],
+        [
+          "2 Häuser",
+          "Haupthaus und Badhaus"
+        ],
+        [
+          "2 Zimmer",
+          "Wohnraum und Schlafzimmer"
+        ],
+        [
+          "1 Bad",
+          "mit Fenster, Dusche und Waschmaschine"
+        ],
+        [
+          "Außenküche",
+          "Profiküche unter der Pergola"
+        ],
+        [
+          "Gästehaus",
+          "kleines Holzhaus"
+        ],
+        [
+          "Klimaanlage",
+          "in jedem Raum, Wärmepumpe"
+        ],
+        [
+          "Möbliert",
+          "Mobiliar im Preis enthalten"
+        ],
+        [
+          "Parkplatz",
+          "direkt am Haus"
+        ]
+      ],
       "photosTitle": "Ein Rundgang in Bildern",
       "photosNote": "Alle Fotos zeigen das Haus, wie es ist.",
       "locTitle": "Lage",
       "locText": "Oberhalb von Monterosso im Ortsteil Soviore, beim ehemaligen Kloster Nostra Signora di Soviore. Ruhig im Grünen, und doch schnell am Meer.",
-      "dist": [["11 Min.", "mit dem Auto zum Strand von Monterosso"], ["ca. 5 km", "bis in den Ort"], ["Bus", "Linie nach Monterosso"], ["ca. 1,5 Std.", "zu den Flughäfen Pisa und Genua"]],
+      "dist": [
+        [
+          "11 Min.",
+          "mit dem Auto zum Strand von Monterosso"
+        ],
+        [
+          "ca. 5 km",
+          "bis in den Ort, im Sommer mit Shuttlebus"
+        ],
+        [
+          "Strände",
+          "Monterosso und Levanto"
+        ],
+        [
+          "ca. 100 km",
+          "zu den Flughäfen Pisa und Genua"
+        ]
+      ],
       "mapLink": "Lage in Google Maps öffnen",
       "buyTitle": "Kaufen in Italien, mit Unterstützung",
       "buyText": "Wir unterstützen Sie umfänglich beim Kauf in Italien.",
-      "steps": [["Besichtigung", "Wir zeigen Ihnen das Haus vor Ort."], ["Unterlagen", "Wir stellen alle nötigen Unterlagen für Sie zusammen."], ["Notar", "Der Kauf wird bei einem italienischen Notar beurkundet."], ["Schlüssel", "Übergabe, ankommen und Urlaub genießen."]],
+      "steps": [
+        [
+          "Besichtigung",
+          "Wir zeigen Ihnen das Haus vor Ort."
+        ],
+        [
+          "Unterlagen",
+          "Wir stellen alle nötigen Unterlagen für Sie zusammen."
+        ],
+        [
+          "Notar",
+          "Der Kauf wird bei einem italienischen Notar beurkundet."
+        ],
+        [
+          "Schlüssel",
+          "Übergabe, ankommen und Urlaub genießen."
+        ]
+      ],
       "formTitle": "Anfrage senden",
       "formText": "Schreiben Sie uns. Wir antworten schnell und persönlich.",
-      "fName": "Name", "fEmail": "E-Mail", "fPhone": "Telefon (optional)", "fMsg": "Ihre Nachricht",
+      "fName": "Name",
+      "fEmail": "E-Mail",
+      "fPhone": "Telefon (optional)",
+      "fMsg": "Ihre Nachricht",
       "fMsgDefault": "Ich interessiere mich für das Rustico in Monterosso und bitte um weitere Informationen.",
       "fPrivacy": "Ihre Angaben verwenden wir nur, um Ihre Anfrage zu beantworten. Die Nachricht wird über den Dienst FormSubmit per E-Mail an uns weitergeleitet.",
-      "fSend": "Anfrage senden", "fSending": "Wird gesendet …",
+      "fSend": "Anfrage senden",
+      "fSending": "Wird gesendet …",
       "fOk": "Danke! Ihre Anfrage ist angekommen. Wir melden uns bald.",
       "fErr": "Das hat nicht geklappt. Bitte prüfen Sie Ihre Angaben und versuchen Sie es noch einmal.",
-      "footer": "Privatverkauf · Rustico in Soviore, Monterosso al Mare (SP), Italien"
+      "footer": "Privatverkauf · Rustico in Soviore, Monterosso al Mare (SP), Italien",
+      "planTitle": "Grundriss",
+      "planText": "Erdgeschoss mit Küche und Außenküche, Obergeschoss mit Zimmer, Bad und WC. Rot markiert: der neue Verbindungsraum zwischen den Häusern.",
+      "planLink": "Grundriss als PDF öffnen",
+      "equipTitle": "Ausstattung",
+      "equip": [
+        "Hochwertiges Mobiliar inklusive",
+        "Profi-Außenküche mit Herd, Kühlschrank und Arbeitsflächen",
+        "Neue Fenster und Fensterläden aus Holz",
+        "Klimaanlage in jedem Raum",
+        "Bad mit Fenster, Dusche und Waschmaschine",
+        "Natursteinplatten an Zugang und Vorplatz",
+        "Abstellraum im Holzhaus",
+        "Satellitenanschluss",
+        "Städtisches Wasser und eigene Quelle, Strom"
+      ]
     },
     "en": {
-      "metaTitle": "Rustico with sea view in Monterosso al Mare · €165,000",
+      "metaTitle": "Rustico with sea view in Monterosso al Mare · €185,000",
       "metaDesc": "Fully renovated rustico of two stone houses high above Monterosso, Cinque Terre. Parking at the house, 11 minutes to the beach.",
-      "nav": {"house": "The house", "photos": "Photos", "location": "Location", "buy": "Buying", "contact": "Enquire"},
+      "nav": {
+        "house": "The house",
+        "photos": "Photos",
+        "location": "Location",
+        "buy": "Buying",
+        "contact": "Enquire"
+      },
       "eyebrow": "Monterosso al Mare · Cinque Terre",
       "title": "Rustico ensemble high above Monterosso",
       "lead": "Two small, fully renovated stone houses overlooking the bay. Parking right at the house, 11 minutes to the beach.",
@@ -76,32 +313,133 @@
       "intro": [
         "High above Monterosso lies this fully renovated rustico made of two small houses, with a fantastic view over the bay of Monterosso.",
         "Completely secluded, above a former monastery that is now a restaurant and hotel.",
-        "The two houses offer about 50 m² of living space with two rooms and a bathroom, plus an open, fully equipped, high-quality kitchen with seating under a weatherproof pergola."
+        "The two houses offer about 50 m² of living space with two rooms and a bathroom, plus an open, fully equipped, high-quality kitchen with seating under a weatherproof pergola.",
+        "The high-quality furniture and the professional outdoor kitchen are included in the price. South-facing with an unobstructed view over the bay."
       ],
-      "facts": [["approx. 50 m²", "living space"], ["2 houses", "main house and bath house"], ["2 rooms", "living room and bedroom"], ["1 bathroom", "in its own bath house"], ["Outdoor kitchen", "under the pergola"], ["Guest house", "small wooden cabin"], ["Air conditioning", "in the rooms"], ["Parking", "right at the house"]],
+      "facts": [
+        [
+          "approx. 50 m²",
+          "living space"
+        ],
+        [
+          "approx. 850 m²",
+          "south-facing hillside plot"
+        ],
+        [
+          "2 houses",
+          "main house and bath house"
+        ],
+        [
+          "2 rooms",
+          "living room and bedroom"
+        ],
+        [
+          "1 bathroom",
+          "with window, shower and washing machine"
+        ],
+        [
+          "Outdoor kitchen",
+          "professional kitchen under the pergola"
+        ],
+        [
+          "Guest house",
+          "small wooden cabin"
+        ],
+        [
+          "Air conditioning",
+          "in every room, heat pump"
+        ],
+        [
+          "Furnished",
+          "furniture included in the price"
+        ],
+        [
+          "Parking",
+          "right at the house"
+        ]
+      ],
       "photosTitle": "A tour in pictures",
       "photosNote": "All photos show the house as it is.",
       "locTitle": "Location",
       "locText": "Above Monterosso in the hamlet of Soviore, next to the former monastery Nostra Signora di Soviore. Quiet and green, yet close to the sea.",
-      "dist": [["11 min", "by car to the beach of Monterosso"], ["approx. 5 km", "to the village"], ["Bus", "line to Monterosso"], ["approx. 1.5 h", "to Pisa and Genoa airports"]],
+      "dist": [
+        [
+          "11 min",
+          "by car to the beach of Monterosso"
+        ],
+        [
+          "approx. 5 km",
+          "to the village, shuttle bus in summer"
+        ],
+        [
+          "Beaches",
+          "Monterosso and Levanto"
+        ],
+        [
+          "approx. 100 km",
+          "to Pisa and Genoa airports"
+        ]
+      ],
       "mapLink": "Open location in Google Maps",
       "buyTitle": "Buying in Italy, with support",
       "buyText": "We support you fully with your purchase in Italy.",
-      "steps": [["Viewing", "We show you the house on site."], ["Documents", "We compile all the necessary documents for you."], ["Notary", "The sale is signed at an Italian notary."], ["Keys", "Handover, arrive and enjoy your holiday."]],
+      "steps": [
+        [
+          "Viewing",
+          "We show you the house on site."
+        ],
+        [
+          "Documents",
+          "We compile all the necessary documents for you."
+        ],
+        [
+          "Notary",
+          "The sale is signed at an Italian notary."
+        ],
+        [
+          "Keys",
+          "Handover, arrive and enjoy your holiday."
+        ]
+      ],
       "formTitle": "Send an enquiry",
       "formText": "Write to us. We reply quickly and personally.",
-      "fName": "Name", "fEmail": "E-mail", "fPhone": "Phone (optional)", "fMsg": "Your message",
+      "fName": "Name",
+      "fEmail": "E-mail",
+      "fPhone": "Phone (optional)",
+      "fMsg": "Your message",
       "fMsgDefault": "I am interested in the rustico in Monterosso and would like more information.",
       "fPrivacy": "We only use your details to answer your enquiry. The message is forwarded to us by e-mail via the FormSubmit service.",
-      "fSend": "Send enquiry", "fSending": "Sending …",
+      "fSend": "Send enquiry",
+      "fSending": "Sending …",
       "fOk": "Thank you! Your enquiry has arrived. We will be in touch soon.",
       "fErr": "That did not work. Please check your details and try again.",
-      "footer": "Private sale · Rustico in Soviore, Monterosso al Mare (SP), Italy"
+      "footer": "Private sale · Rustico in Soviore, Monterosso al Mare (SP), Italy",
+      "planTitle": "Floor plan",
+      "planText": "Ground floor with kitchen and outdoor kitchen, upper floor with room, bathroom and WC. Marked in red: the new connecting room between the houses.",
+      "planLink": "Open floor plan as PDF",
+      "equipTitle": "Features",
+      "equip": [
+        "High-quality furniture included",
+        "Professional outdoor kitchen with stove, fridge and worktops",
+        "New windows and wooden shutters",
+        "Air conditioning in every room",
+        "Bathroom with window, shower and washing machine",
+        "Natural stone paving at entrance and forecourt",
+        "Storage room in the wooden cabin",
+        "Satellite connection",
+        "Mains water and own spring, electricity"
+      ]
     },
     "it": {
-      "metaTitle": "Rustico con vista mare a Monterosso al Mare · 165.000 €",
+      "metaTitle": "Rustico con vista mare a Monterosso al Mare · 185.000 €",
       "metaDesc": "Rustico completamente ristrutturato, due case in pietra sopra Monterosso, Cinque Terre. Parcheggio accanto alla casa, 11 minuti dalla spiaggia.",
-      "nav": {"house": "La casa", "photos": "Foto", "location": "Posizione", "buy": "Acquisto", "contact": "Richiesta"},
+      "nav": {
+        "house": "La casa",
+        "photos": "Foto",
+        "location": "Posizione",
+        "buy": "Acquisto",
+        "contact": "Richiesta"
+      },
       "eyebrow": "Monterosso al Mare · Cinque Terre",
       "title": "Rustico in pietra sopra Monterosso",
       "lead": "Due piccole case in pietra completamente ristrutturate con vista sulla baia. Parcheggio accanto alla casa, 11 minuti dalla spiaggia.",
@@ -113,27 +451,124 @@
       "intro": [
         "Sopra Monterosso si trova questo rustico completamente ristrutturato, composto da due piccole case, con una vista fantastica sulla baia di Monterosso.",
         "Posizione isolata, sopra un ex convento che oggi ospita ristorante e hotel.",
-        "Le due case offrono circa 50 m² con due stanze e un bagno, e una cucina aperta di qualità, completamente attrezzata, con posti a sedere sotto una pergola che ripara dalle intemperie."
+        "Le due case offrono circa 50 m² con due stanze e un bagno, e una cucina aperta di qualità, completamente attrezzata, con posti a sedere sotto una pergola che ripara dalle intemperie.",
+        "L'arredamento di qualità e la cucina esterna professionale sono inclusi nel prezzo. Esposto a sud con vista libera sulla baia."
       ],
-      "facts": [["circa 50 m²", "superficie abitabile"], ["2 case", "casa principale e casetta del bagno"], ["2 stanze", "soggiorno e camera"], ["1 bagno", "nella sua casetta"], ["Cucina esterna", "sotto la pergola"], ["Casetta ospiti", "in legno"], ["Aria condizionata", "nelle stanze"], ["Parcheggio", "accanto alla casa"]],
+      "facts": [
+        [
+          "circa 50 m²",
+          "superficie abitabile"
+        ],
+        [
+          "circa 850 m²",
+          "terreno in collina esposto a sud"
+        ],
+        [
+          "2 case",
+          "casa principale e casetta del bagno"
+        ],
+        [
+          "2 stanze",
+          "soggiorno e camera"
+        ],
+        [
+          "1 bagno",
+          "con finestra, doccia e lavatrice"
+        ],
+        [
+          "Cucina esterna",
+          "cucina professionale sotto la pergola"
+        ],
+        [
+          "Casetta ospiti",
+          "in legno"
+        ],
+        [
+          "Aria condizionata",
+          "in ogni stanza, pompa di calore"
+        ],
+        [
+          "Arredato",
+          "arredamento incluso nel prezzo"
+        ],
+        [
+          "Parcheggio",
+          "accanto alla casa"
+        ]
+      ],
       "photosTitle": "Un tour in immagini",
       "photosNote": "Tutte le foto mostrano la casa così com'è.",
       "locTitle": "Posizione",
       "locText": "Sopra Monterosso, nella località di Soviore, vicino all'ex convento Nostra Signora di Soviore. Tranquillità nel verde, a pochi minuti dal mare.",
-      "dist": [["11 min", "in auto alla spiaggia di Monterosso"], ["circa 5 km", "dal paese"], ["Autobus", "linea per Monterosso"], ["circa 1,5 ore", "dagli aeroporti di Pisa e Genova"]],
+      "dist": [
+        [
+          "11 min",
+          "in auto alla spiaggia di Monterosso"
+        ],
+        [
+          "circa 5 km",
+          "dal paese, navetta in estate"
+        ],
+        [
+          "Spiagge",
+          "Monterosso e Levanto"
+        ],
+        [
+          "circa 100 km",
+          "dagli aeroporti di Pisa e Genova"
+        ]
+      ],
       "mapLink": "Apri la posizione in Google Maps",
       "buyTitle": "Acquistare in Italia, con assistenza",
       "buyText": "Vi assistiamo in ogni fase dell'acquisto in Italia.",
-      "steps": [["Visita", "Vi mostriamo la casa sul posto."], ["Documenti", "Prepariamo per voi tutta la documentazione necessaria."], ["Notaio", "La vendita si firma presso un notaio italiano."], ["Chiavi", "Consegna, arrivo e vacanza."]],
+      "steps": [
+        [
+          "Visita",
+          "Vi mostriamo la casa sul posto."
+        ],
+        [
+          "Documenti",
+          "Prepariamo per voi tutta la documentazione necessaria."
+        ],
+        [
+          "Notaio",
+          "La vendita si firma presso un notaio italiano."
+        ],
+        [
+          "Chiavi",
+          "Consegna, arrivo e vacanza."
+        ]
+      ],
       "formTitle": "Invia una richiesta",
       "formText": "Scriveteci. Rispondiamo in modo rapido e personale.",
-      "fName": "Nome", "fEmail": "E-mail", "fPhone": "Telefono (facoltativo)", "fMsg": "Il vostro messaggio",
+      "fName": "Nome",
+      "fEmail": "E-mail",
+      "fPhone": "Telefono (facoltativo)",
+      "fMsg": "Il vostro messaggio",
       "fMsgDefault": "Sono interessato al rustico a Monterosso e vorrei ricevere maggiori informazioni.",
       "fPrivacy": "Usiamo i vostri dati solo per rispondere alla richiesta. Il messaggio ci viene inoltrato via e-mail tramite il servizio FormSubmit.",
-      "fSend": "Invia richiesta", "fSending": "Invio in corso …",
+      "fSend": "Invia richiesta",
+      "fSending": "Invio in corso …",
       "fOk": "Grazie! La vostra richiesta è arrivata. Vi risponderemo presto.",
       "fErr": "Non ha funzionato. Controllate i dati e riprovate.",
-      "footer": "Vendita privata · Rustico a Soviore, Monterosso al Mare (SP), Italia"
+      "footer": "Vendita privata · Rustico a Soviore, Monterosso al Mare (SP), Italia",
+      "planTitle": "Planimetria",
+      "planText": "Piano terra con cucina e cucina esterna, primo piano con camera, bagno e WC. In rosso: il nuovo locale di collegamento tra le case.",
+      "planLink": "Apri la planimetria in PDF",
+      "equipTitle": "Dotazioni",
+      "equip": [
+        "Arredamento di qualità incluso",
+        "Cucina esterna professionale con fornelli, frigorifero e piani di lavoro",
+        "Nuove finestre e persiane in legno",
+        "Aria condizionata in ogni stanza",
+        "Bagno con finestra, doccia e lavatrice",
+        "Pavimentazione in pietra naturale all'ingresso e nel piazzale",
+        "Ripostiglio nella casetta in legno",
+        "Allacciamento satellitare",
+        "Acqua comunale e sorgente propria, elettricità"
+      ]
     }
-  }
+  },
+  "price_display": "185.000 €",
+  "price_num": "185000"
 }
