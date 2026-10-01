@@ -238,3 +238,4 @@ h2 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 1.08; }
 .draw img { width: 100%; height: auto; }
 .draw figcaption { margin-top: .75rem; font-size: .85rem; color: var(--muted); }
 @media (max-width: 767px) { .area { margin-top: 2.5rem; } .area h3 { font-size: 1.45rem; } .area-grid { gap: .5rem; } }
+@media (max-width: 400px) { .langs a span { display: none; } .langs a { padding: .55rem .35rem; } .flag { width: 1.3rem; height: .9rem; } }

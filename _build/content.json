@@ -6,151 +6,176 @@
       "n": "01",
       "de": "Zufahrt von der Straße mit Parkplatz",
       "en": "Access from the road with parking",
-      "it": "Accesso dalla strada con parcheggio"
+      "it": "Accesso dalla strada con parcheggio",
+      "fr": "Accès depuis la route avec parking"
     },
     {
       "n": "02",
       "de": "Gartenweg hinauf zum Steinhaus",
       "en": "Garden path up to the stone house",
-      "it": "Sentiero verso la casa in pietra"
+      "it": "Sentiero verso la casa in pietra",
+      "fr": "Sentier montant vers la maison en pierre"
     },
     {
       "n": "03",
       "de": "Weg mit Holzgeländer",
       "en": "Path with wooden railing",
-      "it": "Sentiero con ringhiera in legno"
+      "it": "Sentiero con ringhiera in legno",
+      "fr": "Chemin avec rambarde en bois"
     },
     {
       "n": "04",
       "de": "Terrasse aus Naturstein",
       "en": "Natural stone terrace",
-      "it": "Terrazza in pietra naturale"
+      "it": "Terrazza in pietra naturale",
+      "fr": "Terrasse en pierre naturelle"
     },
     {
       "n": "05",
       "de": "Das Rustico im Grünen",
       "en": "The rustico among the trees",
-      "it": "Il rustico nel verde"
+      "it": "Il rustico nel verde",
+      "fr": "Le rustico dans la verdure"
     },
     {
       "n": "06",
       "de": "Haupthaus aus Naturstein",
       "en": "Main stone house",
-      "it": "Casa principale in pietra"
+      "it": "Casa principale in pietra",
+      "fr": "Maison principale en pierre"
     },
     {
       "n": "07",
       "de": "Alte Steintreppe",
       "en": "Old stone stairs",
-      "it": "Antica scala in pietra"
+      "it": "Antica scala in pietra",
+      "fr": "Ancien escalier en pierre"
     },
     {
       "n": "08",
       "de": "Ensemble mit Gästehaus aus Holz",
       "en": "Ensemble with wooden guest house",
-      "it": "L'insieme con la casetta in legno"
+      "it": "L'insieme con la casetta in legno",
+      "fr": "L'ensemble avec la maisonnette en bois"
     },
     {
       "n": "09",
       "de": "Gästehaus aus Holz",
       "en": "Wooden guest house",
-      "it": "Casetta per ospiti in legno"
+      "it": "Casetta per ospiti in legno",
+      "fr": "Maisonnette d'amis en bois"
     },
     {
       "n": "10",
       "de": "Gang unter der Pergola",
       "en": "Walkway under the pergola",
-      "it": "Passaggio sotto la pergola"
+      "it": "Passaggio sotto la pergola",
+      "fr": "Passage sous la pergola"
     },
     {
       "n": "11",
       "de": "Überdachte Außenküche",
       "en": "Covered outdoor kitchen",
-      "it": "Cucina esterna coperta"
+      "it": "Cucina esterna coperta",
+      "fr": "Cuisine extérieure couverte"
     },
     {
       "n": "12",
       "de": "Wohnraum mit Klimaanlage",
       "en": "Living room with air conditioning",
-      "it": "Soggiorno con aria condizionata"
+      "it": "Soggiorno con aria condizionata",
+      "fr": "Séjour climatisé"
     },
     {
       "n": "13",
       "de": "Wohnraum mit Fenster",
       "en": "Living room with window",
-      "it": "Soggiorno con finestra"
+      "it": "Soggiorno con finestra",
+      "fr": "Séjour avec fenêtre"
     },
     {
       "n": "14",
       "de": "Küchenregal",
       "en": "Kitchen shelves",
-      "it": "Scaffali della cucina"
+      "it": "Scaffali della cucina",
+      "fr": "Étagères de cuisine"
     },
     {
       "n": "15",
       "de": "Innentreppe und Natursteinwand",
       "en": "Inner staircase and stone wall",
-      "it": "Scala interna e muro in pietra"
+      "it": "Scala interna e muro in pietra",
+      "fr": "Escalier intérieur et mur en pierre"
     },
     {
       "n": "16",
       "de": "Schlafzimmer",
       "en": "Bedroom",
-      "it": "Camera da letto"
+      "it": "Camera da letto",
+      "fr": "Chambre"
     },
     {
       "n": "17",
       "de": "Badhaus",
       "en": "Bath house",
-      "it": "Casetta del bagno"
+      "it": "Casetta del bagno",
+      "fr": "Maisonnette de la salle de bains"
     },
     {
       "n": "22",
       "de": "Neuer Verbindungsraum von außen, mit Meerblick",
       "en": "New connecting room from outside, with sea view",
-      "it": "Nuovo locale di collegamento dall'esterno, con vista mare"
+      "it": "Nuovo locale di collegamento dall'esterno, con vista mare",
+      "fr": "Nouvelle pièce de liaison vue de l'extérieur, avec vue mer"
     },
     {
       "n": "23",
       "de": "Neuer Verbindungsraum im Ausbau",
       "en": "New connecting room, being finished",
-      "it": "Nuovo locale di collegamento in fase di finitura"
+      "it": "Nuovo locale di collegamento in fase di finitura",
+      "fr": "Nouvelle pièce de liaison en cours de finition"
     },
     {
       "n": "24",
       "de": "Neuer Verbindungsraum, Blick zur Tür",
       "en": "New connecting room, view to the door",
-      "it": "Nuovo locale di collegamento, vista verso la porta"
+      "it": "Nuovo locale di collegamento, vista verso la porta",
+      "fr": "Nouvelle pièce de liaison, vue vers la porte"
     },
     {
       "n": "25",
       "de": "Durchgang zum Verbindungsraum",
       "en": "Passage to the connecting room",
-      "it": "Passaggio verso il locale di collegamento"
+      "it": "Passaggio verso il locale di collegamento",
+      "fr": "Passage vers la pièce de liaison"
     },
     {
       "n": "18",
       "de": "Pergola mit Meerblick",
       "en": "Pergola with sea view",
-      "it": "Pergola con vista mare"
+      "it": "Pergola con vista mare",
+      "fr": "Pergola avec vue mer"
     },
     {
       "n": "21",
       "de": "Pergola-Gang mit Meerblick",
       "en": "Pergola walkway with sea view",
-      "it": "Passaggio sotto la pergola con vista mare"
+      "it": "Passaggio sotto la pergola con vista mare",
+      "fr": "Passage sous la pergola avec vue mer"
     },
     {
       "n": "19",
       "de": "Blick aus dem Fenster aufs Meer",
       "en": "View from the window to the sea",
-      "it": "Vista mare dalla finestra"
+      "it": "Vista mare dalla finestra",
+      "fr": "Vue sur la mer depuis la fenêtre"
     },
     {
       "n": "20",
       "de": "Blick auf die Bucht von Monterosso",
       "en": "View over the bay of Monterosso",
-      "it": "Vista sulla baia di Monterosso"
+      "it": "Vista sulla baia di Monterosso",
+      "fr": "Vue sur la baie de Monterosso"
     }
   ],
   "t": {
@@ -576,6 +601,147 @@
       "areaTitle": "I dintorni",
       "areaText": "A pochi passi si trova il Santuario Nostra Signora di Soviore, uno dei luoghi di pellegrinaggio più antichi della Liguria, con hotel e ristorante.",
       "drawCap": "Sezione, prospetto ovest e primo piano con la posizione dei climatizzatori"
+    },
+    "fr": {
+      "metaTitle": "Rustico avec vue mer à Monterosso al Mare · 185 000 €",
+      "metaDesc": "Rustico entièrement rénové, deux maisons en pierre au-dessus de Monterosso, Cinque Terre. Parking devant la maison, 11 minutes de la plage.",
+      "nav": {
+        "house": "La maison",
+        "photos": "Photos",
+        "location": "Situation",
+        "buy": "Achat",
+        "contact": "Demande"
+      },
+      "eyebrow": "Monterosso al Mare · Cinque Terre",
+      "title": "Rustico en pierre au-dessus de Monterosso",
+      "lead": "Deux petites maisons en pierre entièrement rénovées avec vue sur la baie. Parking devant la maison, 11 minutes de la plage.",
+      "price": "Prix",
+      "ctaVisit": "Demander une visite",
+      "ctaSound": "Voir la visite avec le son",
+      "close": "Fermer",
+      "introTitle": "Arriver et profiter des vacances",
+      "intro": [
+        "Au-dessus de Monterosso se trouve ce rustico entièrement rénové, composé de deux petites maisons, avec une vue magnifique sur la baie de Monterosso.",
+        "Situation isolée, au-dessus d'un ancien couvent, aujourd'hui restaurant et hôtel.",
+        "Les deux maisons offrent environ 50 m² habitables avec deux pièces et une salle de bains, ainsi qu'une cuisine ouverte haut de gamme, entièrement équipée, avec coin repas sous une pergola qui protège des intempéries.",
+        "Le mobilier de qualité et la cuisine extérieure professionnelle sont compris dans le prix. Exposition sud avec vue dégagée sur la baie."
+      ],
+      "facts": [
+        [
+          "env. 50 m²",
+          "surface habitable"
+        ],
+        [
+          "env. 850 m²",
+          "terrain en pente exposé au sud"
+        ],
+        [
+          "2 maisons",
+          "maison principale et maisonnette de la salle de bains"
+        ],
+        [
+          "2 pièces",
+          "séjour et chambre"
+        ],
+        [
+          "1 salle de bains",
+          "avec fenêtre, douche et lave-linge"
+        ],
+        [
+          "Cuisine extérieure",
+          "cuisine professionnelle sous la pergola"
+        ],
+        [
+          "Maisonnette d'amis",
+          "petite cabane en bois"
+        ],
+        [
+          "Climatisation",
+          "dans chaque pièce, pompe à chaleur"
+        ],
+        [
+          "Meublé",
+          "mobilier compris dans le prix"
+        ],
+        [
+          "Parking",
+          "devant la maison"
+        ]
+      ],
+      "photosTitle": "Une visite en images",
+      "photosNote": "Toutes les photos montrent la maison telle qu'elle est.",
+      "locTitle": "Situation",
+      "locText": "Au-dessus de Monterosso, dans le hameau de Soviore, près de l'ancien couvent Nostra Signora di Soviore. Au calme dans la verdure, et pourtant tout près de la mer.",
+      "dist": [
+        [
+          "11 min",
+          "en voiture jusqu'à la plage de Monterosso"
+        ],
+        [
+          "env. 5 km",
+          "jusqu'au village, navette en été"
+        ],
+        [
+          "Plages",
+          "Monterosso et Levanto"
+        ],
+        [
+          "env. 100 km",
+          "des aéroports de Pise et Gênes"
+        ]
+      ],
+      "mapLink": "Ouvrir la situation dans Google Maps",
+      "buyTitle": "Acheter en Italie, avec accompagnement",
+      "buyText": "Nous vous accompagnons à chaque étape de votre achat en Italie.",
+      "steps": [
+        [
+          "Visite",
+          "Nous vous montrons la maison sur place."
+        ],
+        [
+          "Documents",
+          "Nous préparons pour vous tous les documents nécessaires."
+        ],
+        [
+          "Notaire",
+          "La vente est signée chez un notaire italien."
+        ],
+        [
+          "Clés",
+          "Remise des clés, arrivée et vacances."
+        ]
+      ],
+      "formTitle": "Envoyer une demande",
+      "formText": "Écrivez-nous. Nous répondons rapidement et personnellement.",
+      "fName": "Nom",
+      "fEmail": "E-mail",
+      "fPhone": "Téléphone (facultatif)",
+      "fMsg": "Votre message",
+      "fMsgDefault": "Le rustico à Monterosso m'intéresse et je souhaiterais recevoir plus d'informations.",
+      "fPrivacy": "Nous utilisons vos données uniquement pour répondre à votre demande. Le message nous est transmis par e-mail via le service FormSubmit.",
+      "fSend": "Envoyer la demande",
+      "fSending": "Envoi en cours …",
+      "fOk": "Merci ! Votre demande est bien arrivée. Nous vous répondrons bientôt.",
+      "fErr": "Cela n'a pas fonctionné. Veuillez vérifier vos données et réessayer.",
+      "footer": "Vente privée · Rustico à Soviore, Monterosso al Mare (SP), Italie",
+      "planTitle": "Plan",
+      "planText": "Rez-de-chaussée avec cuisine et cuisine extérieure, étage avec chambre, salle de bains et WC. En rouge : la nouvelle pièce de liaison entre les maisons.",
+      "planLink": "Ouvrir le plan en PDF",
+      "equipTitle": "Équipement",
+      "equip": [
+        "Mobilier de qualité compris",
+        "Cuisine extérieure professionnelle avec plaques, réfrigérateur et plans de travail",
+        "Nouvelles fenêtres et volets en bois",
+        "Climatisation dans chaque pièce",
+        "Salle de bains avec fenêtre, douche et lave-linge",
+        "Dallage en pierre naturelle à l'entrée et sur le parvis",
+        "Débarras dans la maisonnette en bois",
+        "Raccordement satellite",
+        "Eau de la ville et source privée, électricité"
+      ],
+      "areaTitle": "Les environs",
+      "areaText": "À quelques pas se trouve le Santuario Nostra Signora di Soviore, l'un des plus anciens lieux de pèlerinage de Ligurie, avec hôtel et restaurant.",
+      "drawCap": "Coupe, façade ouest et étage avec l'emplacement des climatiseurs"
     }
   },
   "price_display": "185.000 €",
@@ -585,37 +751,43 @@
       "n": "26",
       "de": "Kirchturm des Santuario di Soviore",
       "en": "Bell tower of the Santuario di Soviore",
-      "it": "Campanile del Santuario di Soviore"
+      "it": "Campanile del Santuario di Soviore",
+      "fr": "Clocher du Santuario di Soviore"
     },
     {
       "n": "27",
       "de": "Das ehemalige Kloster, heute Hotel und Restaurant",
       "en": "The former monastery, now hotel and restaurant",
-      "it": "L'ex convento, oggi hotel e ristorante"
+      "it": "L'ex convento, oggi hotel e ristorante",
+      "fr": "L'ancien couvent, aujourd'hui hôtel et restaurant"
     },
     {
       "n": "28",
       "de": "Allee zum Santuario",
       "en": "Avenue to the Santuario",
-      "it": "Viale verso il Santuario"
+      "it": "Viale verso il Santuario",
+      "fr": "Allée vers le Santuario"
     },
     {
       "n": "29",
       "de": "Gepflasterter Weg beim Kloster",
       "en": "Paved path by the monastery",
-      "it": "Sentiero lastricato vicino al convento"
+      "it": "Sentiero lastricato vicino al convento",
+      "fr": "Chemin pavé près du couvent"
     },
     {
       "n": "30",
       "de": "Kleine Kapelle in der Nähe",
       "en": "Small chapel nearby",
-      "it": "Piccola cappella nei dintorni"
+      "it": "Piccola cappella nei dintorni",
+      "fr": "Petite chapelle à proximité"
     },
     {
       "n": "31",
       "de": "Gasse mit Treppe am Kloster",
       "en": "Lane with steps by the monastery",
-      "it": "Vicolo con scalinata vicino al convento"
+      "it": "Vicolo con scalinata vicino al convento",
+      "fr": "Ruelle avec escalier près du couvent"
     }
   ]
 }

@@ -11,6 +11,7 @@ e = html.escape
 FLAGS = {
     "de": '<svg class="flag" viewBox="0 0 5 3" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>',
     "en": '<svg class="flag" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="uk"><path d="M0,0 v30 h60 v-30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" clip-path="url(#uk)"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3" clip-path="url(#uk)"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>',
+    "fr": '<svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE1126"/></svg>',
     "it": '<svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg>',
 }
 
@@ -23,11 +24,11 @@ def page(lang):
         f'<a href="{base}{"" if l == "de" else l + "/"}" hreflang="{l}"'
         + (' aria-current="true"' if l == lang else "")
         + f">{FLAGS[l]}<span>{l.upper()}</span></a>"
-        for l in ("de", "en", "it")
+        for l in ("de", "en", "fr", "it")
     )
     alts = "".join(
         f'<link rel="alternate" hreflang="{l}" href="{SITE}{"" if l == "de" else l + "/"}">'
-        for l in ("de", "en", "it")
+        for l in ("de", "en", "fr", "it")
     )
     facts = "".join(f"<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>" for k, v in t["facts"])
     intro = "".join(f"<p>{e(p)}</p>" for p in t["intro"])
@@ -179,7 +180,7 @@ def page(lang):
 """
 
 
-for lang in ("de", "en", "it"):
+for lang in ("de", "en", "fr", "it"):
     d = ROOT if lang == "de" else os.path.join(ROOT, lang)
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(page(lang))
