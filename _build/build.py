@@ -52,6 +52,24 @@ def page(lang):
         f'<img src="{base}photos/t_{p["n"]}.jpg" alt="{e(p[lang])}" width="1200" height="1600" loading="lazy"><span>{e(p[lang])}</span></button>'
         for i, p in enumerate(C["area_photos"])
     )
+    S = C["seller"]
+    L = C["legal"]
+    seller_html = (
+        f'<section class="seller wrap" id="verkaeufer">'
+        f'<img src="{base}{S["photo"]}" alt="{e(S["name"])}" width="200" height="200" loading="lazy">'
+        f'<div><h2>{e(S["title"][lang])}</h2>'
+        f'<p class="seller-name">{e(S["name"])}<span>{e(S["role"][lang])}</span></p>'
+        + "".join(f"<p>{e(x)}</p>" for x in S["text"][lang])
+        + "</div></section>"
+    )
+    foot_links = (
+        f'<a href="{base}{lang}/impressum.html" class="flink">{e(L["imprint"][lang])}</a>'
+        f'<a href="{base}{lang}/datenschutz.html" class="flink">{e(L["privacy"][lang])}</a>'
+    ) if lang != "de" else (
+        f'<a href="impressum.html" class="flink">{e(L["imprint"]["de"])}</a>'
+        f'<a href="datenschutz.html" class="flink">{e(L["privacy"]["de"])}</a>'
+    )
+
     ld = {
         "@context": "https://schema.org",
         "@type": "Offer",
@@ -144,6 +162,8 @@ def page(lang):
   <ol class="steps">{steps}</ol>
 </section>
 
+{seller_html}
+
 <section class="contact" id="kontakt">
   <img class="contact-bg" src="{base}photos/18.jpg" alt="" loading="lazy">
   <div class="contact-shade"></div>
@@ -166,7 +186,7 @@ def page(lang):
 </section>
 </main>
 <div class="mbar" id="mbar"><div><small>{e(t["price"])}</small><strong>{C["price_display"]}</strong></div><a href="#kontakt">{e(t["ctaVisit"])} →</a></div>
-<footer class="foot"><div class="wrap"><span>{e(t["footer"])}</span><a href="#top" aria-label="top">↑</a></div></footer>
+<footer class="foot"><div class="wrap"><span>{e(t["footer"])}</span><span class="flinks">{foot_links}</span><a href="#top" aria-label="top">↑</a></div></footer>
 
 <div class="modal" id="videoModal" hidden><div class="modal-in"><button type="button" class="close" data-close>{e(t["close"])} ✕</button><video id="modalVideo" controls playsinline></video></div></div>
 <div class="modal lb" id="lightbox" hidden>
@@ -185,3 +205,120 @@ for lang in ("de", "en", "fr", "it"):
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(page(lang))
 print("ok")
+
+
+# --- Rechtsseiten: Impressum und Datenschutzerklaerung je Sprache ---
+LEGAL_TXT = {
+    "de": {
+        "imp_h": "Impressum",
+        "imp": [
+            ("Angaben gemäß § 5 DDG", "{owner}<br>{street}<br>{city}<br>{country}<br>E-Mail: {email}"),
+            ("Verantwortlich für den Inhalt", "{owner}, Anschrift wie oben"),
+            ("Art des Angebots", "Diese Seite ist ein privates Verkaufsangebot für eine einzelne Immobilie. Es handelt sich nicht um ein gewerbliches Angebot und nicht um eine Maklertätigkeit."),
+            ("Streitbeilegung", "Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit."),
+        ],
+        "pri_h": "Datenschutzerklärung",
+        "pri": [
+            ("Verantwortlicher", "{owner}<br>{street}<br>{city}<br>{country}<br>E-Mail: {email}"),
+            ("Aufruf der Seite", "Die Seite wird über GitHub Pages bereitgestellt (GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf überträgt Ihr Browser technisch notwendige Daten wie IP-Adresse, Datum und Uhrzeit, die GitHub in Server-Protokollen speichert. Rechtsgrundlage ist unser berechtigtes Interesse am sicheren Betrieb der Seite (Art. 6 Abs. 1 lit. f DSGVO)."),
+            ("Kontaktformular", "Ihre Angaben aus dem Formular werden über den Dienst FormSubmit (formsubmit.co) per E-Mail an uns weitergeleitet und nur zur Beantwortung Ihrer Anfrage verwendet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b und f DSGVO. Wir löschen die Daten, sobald die Anfrage erledigt ist."),
+            ("Schriften", "Die Schriften werden von unserem eigenen Server geladen, es besteht keine Verbindung zu Google Fonts."),
+            ("Keine Cookies, keine Statistik", "Die Seite setzt keine Cookies und verwendet keine Analyse- oder Werbedienste."),
+            ("Ihre Rechte", "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde."),
+        ],
+        "back": "Zurück zur Startseite",
+    },
+    "en": {
+        "imp_h": "Legal notice",
+        "imp": [
+            ("Provider", "{owner}<br>{street}<br>{city}<br>{country}<br>E-mail: {email}"),
+            ("Responsible for the content", "{owner}, address as above"),
+            ("Type of offer", "This page is a private sale offer for a single property. It is not a commercial offer and not an estate agency service."),
+            ("Dispute resolution", "We are not obliged and not willing to take part in dispute resolution proceedings before a consumer arbitration board."),
+        ],
+        "pri_h": "Privacy policy",
+        "pri": [
+            ("Controller", "{owner}<br>{street}<br>{city}<br>{country}<br>E-mail: {email}"),
+            ("Visiting this page", "The page is hosted on GitHub Pages (GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Your browser transmits technically necessary data such as IP address, date and time, which GitHub stores in server logs. Legal basis: our legitimate interest in operating the site securely (Art. 6(1)(f) GDPR)."),
+            ("Contact form", "The details you enter are forwarded to us by e-mail through the service FormSubmit (formsubmit.co) and used only to answer your enquiry. Legal basis: Art. 6(1)(b) and (f) GDPR. We delete the data once your enquiry has been dealt with."),
+            ("Fonts", "Fonts are served from our own server; there is no connection to Google Fonts."),
+            ("No cookies, no tracking", "This site sets no cookies and uses no analytics or advertising services."),
+            ("Your rights", "You have the right to access, rectification, erasure, restriction of processing, data portability and objection, as well as the right to lodge a complaint with a supervisory authority."),
+        ],
+        "back": "Back to the home page",
+    },
+    "fr": {
+        "imp_h": "Mentions légales",
+        "imp": [
+            ("Éditeur", "{owner}<br>{street}<br>{city}<br>{country}<br>E-mail : {email}"),
+            ("Responsable du contenu", "{owner}, adresse ci-dessus"),
+            ("Nature de l'offre", "Cette page est une offre de vente entre particuliers pour un seul bien. Il ne s'agit ni d'une offre commerciale ni d'une activité d'agence immobilière."),
+            ("Règlement des litiges", "Nous ne sommes pas tenus de participer à une procédure de règlement des litiges devant un organisme de médiation et n'y sommes pas disposés."),
+        ],
+        "pri_h": "Politique de confidentialité",
+        "pri": [
+            ("Responsable du traitement", "{owner}<br>{street}<br>{city}<br>{country}<br>E-mail : {email}"),
+            ("Consultation du site", "Le site est hébergé par GitHub Pages (GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis). Votre navigateur transmet des données techniques nécessaires telles que l'adresse IP, la date et l'heure, que GitHub conserve dans des journaux. Base légale : notre intérêt légitime à exploiter le site en toute sécurité (art. 6, par. 1, point f, RGPD)."),
+            ("Formulaire de contact", "Vos données sont transmises par e-mail via le service FormSubmit (formsubmit.co) et utilisées uniquement pour répondre à votre demande. Base légale : art. 6, par. 1, points b et f, RGPD. Les données sont supprimées une fois la demande traitée."),
+            ("Polices", "Les polices sont chargées depuis notre propre serveur, sans connexion à Google Fonts."),
+            ("Pas de cookies, pas de statistiques", "Ce site ne dépose aucun cookie et n'utilise aucun service d'analyse ou de publicité."),
+            ("Vos droits", "Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation du traitement, de portabilité et d'opposition, ainsi que du droit d'introduire une réclamation auprès d'une autorité de contrôle."),
+        ],
+        "back": "Retour à l'accueil",
+    },
+    "it": {
+        "imp_h": "Note legali",
+        "imp": [
+            ("Titolare del sito", "{owner}<br>{street}<br>{city}<br>{country}<br>E-mail: {email}"),
+            ("Responsabile dei contenuti", "{owner}, indirizzo come sopra"),
+            ("Tipo di offerta", "Questa pagina è un offerta di vendita tra privati per un singolo immobile. Non si tratta di un offerta commerciale né di attività di agenzia immobiliare."),
+            ("Risoluzione delle controversie", "Non siamo obbligati né disponibili a partecipare a procedure di conciliazione davanti a un organismo di risoluzione delle controversie dei consumatori."),
+        ],
+        "pri_h": "Informativa sulla privacy",
+        "pri": [
+            ("Titolare del trattamento", "{owner}<br>{street}<br>{city}<br>{country}<br>E-mail: {email}"),
+            ("Visita del sito", "Il sito è ospitato su GitHub Pages (GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Il browser trasmette dati tecnicamente necessari come indirizzo IP, data e ora, che GitHub conserva nei log del server. Base giuridica: il nostro legittimo interesse al funzionamento sicuro del sito (art. 6, par. 1, lett. f, GDPR)."),
+            ("Modulo di contatto", "I dati inseriti vengono inoltrati via e-mail tramite il servizio FormSubmit (formsubmit.co) e utilizzati solo per rispondere alla sua richiesta. Base giuridica: art. 6, par. 1, lett. b ed f, GDPR. I dati vengono cancellati una volta evasa la richiesta."),
+            ("Caratteri", "I caratteri sono caricati dal nostro server, senza collegamento a Google Fonts."),
+            ("Nessun cookie, nessuna statistica", "Il sito non utilizza cookie né servizi di analisi o pubblicità."),
+            ("I suoi diritti", "Ha diritto di accesso, rettifica, cancellazione, limitazione del trattamento, portabilità e opposizione, nonché di presentare reclamo a un autorità di controllo."),
+        ],
+        "back": "Torna alla pagina iniziale",
+    },
+}
+
+
+def legal_page(lang, kind):
+    L = C["legal"]
+    T = LEGAL_TXT[lang]
+    base = "" if lang == "de" else "../"
+    head = T["imp_h"] if kind == "imprint" else T["pri_h"]
+    rows = T["imp"] if kind == "imprint" else T["pri"]
+    vals = {
+        "owner": L["owner"], "street": L["street"], "city": L["city"],
+        "country": L["country"][lang], "email": L["email"],
+    }
+    body = "".join("<h2>" + e(h) + "</h2><p>" + b.format(**vals) + "</p>" for h, b in rows)
+    home = "./" if lang == "de" else "./"
+    return (
+        '<!doctype html>\n<html lang="' + lang + '">\n<head>\n'
+        '<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        "<title>" + e(head) + " \u00b7 Rustico Soviore</title>\n"
+        '<meta name="robots" content="noindex">\n'
+        '<link rel="icon" href="' + base + 'favicon.svg" type="image/svg+xml">\n'
+        '<link rel="stylesheet" href="' + base + 'fonts.css">\n'
+        '<link rel="stylesheet" href="' + base + 'style.css">\n'
+        "</head>\n<body>\n"
+        '<main class="legal wrap">\n<h1>' + e(head) + "</h1>\n" + body +
+        '<p class="back"><a href="' + home + '">\u2190 ' + e(T["back"]) + "</a></p>\n"
+        "</main>\n</body>\n</html>\n"
+    )
+
+
+for lang in ("de", "en", "fr", "it"):
+    d = ROOT if lang == "de" else os.path.join(ROOT, lang)
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, "impressum.html"), "w", encoding="utf-8").write(legal_page(lang, "imprint"))
+    open(os.path.join(d, "datenschutz.html"), "w", encoding="utf-8").write(legal_page(lang, "privacy"))
+print("rechtsseiten ok")

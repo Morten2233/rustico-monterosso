@@ -768,5 +768,63 @@
       "it": "Vicolo con scalinata vicino al convento",
       "fr": "Ruelle avec escalier près du couvent"
     }
-  ]
+  ],
+  "seller": {
+    "name": "Janusz Zybowski",
+    "role": {
+      "de": "Facharzt für Allgemeinmedizin",
+      "en": "Specialist in general medicine",
+      "fr": "Médecin spécialiste en médecine générale",
+      "it": "Medico specialista in medicina generale"
+    },
+    "photo": "verkaeufer.webp",
+    "title": {
+      "de": "Der Verkäufer",
+      "en": "The seller",
+      "fr": "Le vendeur",
+      "it": "Il venditore"
+    },
+    "text": {
+      "de": [
+        "Ich bin Janusz Zybowski, Privatperson und Facharzt für Allgemeinmedizin. Ich lebe und arbeite in Deutschland.",
+        "Das Rustico ist meine Ferienwohnung, die ich gerne verkaufen möchte. Der Verkauf läuft privat, ohne Makler und ohne Provision."
+      ],
+      "en": [
+        "My name is Janusz Zybowski. I am a private individual and a specialist in general medicine, living and working in Germany.",
+        "The rustico is my holiday home, and I would like to sell it. This is a private sale, without an agent and without commission."
+      ],
+      "fr": [
+        "Je m'appelle Janusz Zybowski. Je suis un particulier et médecin spécialiste en médecine générale, je vis et travaille en Allemagne.",
+        "Le rustico est ma maison de vacances et je souhaite la vendre. Il s'agit d'une vente entre particuliers, sans agence et sans commission."
+      ],
+      "it": [
+        "Mi chiamo Janusz Zybowski. Sono un privato e medico specialista in medicina generale, vivo e lavoro in Germania.",
+        "Il rustico è la mia casa per le vacanze e desidero venderla. La vendita è tra privati, senza agenzia e senza provvigione."
+      ]
+    }
+  },
+  "legal": {
+    "imprint": {
+      "de": "Impressum",
+      "en": "Legal notice",
+      "fr": "Mentions légales",
+      "it": "Note legali"
+    },
+    "privacy": {
+      "de": "Datenschutz",
+      "en": "Privacy",
+      "fr": "Confidentialité",
+      "it": "Privacy"
+    },
+    "owner": "Janusz Zybowski",
+    "street": "[Straße und Hausnummer]",
+    "city": "[PLZ Ort]",
+    "country": {
+      "de": "Deutschland",
+      "en": "Germany",
+      "fr": "Allemagne",
+      "it": "Germania"
+    },
+    "email": "info@rustico-monterosso.com"
+  }
 }
