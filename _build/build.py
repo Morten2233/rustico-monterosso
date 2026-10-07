@@ -4,7 +4,7 @@ import html, json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 C = json.load(open(os.path.join(ROOT, "_build", "content.json"), encoding="utf-8"))
-SITE = "https://morten2233.github.io/rustico-monterosso/"
+SITE = "https://rustico-monterosso.com/"
 FORM_ENDPOINT = C["form_endpoint"]
 TALL = {"02", "06", "07", "10", "12", "15", "16", "19", "25", "26", "27", "28", "29", "30", "31"}
 e = html.escape
