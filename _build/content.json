@@ -297,7 +297,8 @@
       ],
       "areaTitle": "Die Nachbarschaft",
       "areaText": "Wenige Schritte entfernt liegt das Santuario Nostra Signora di Soviore, einer der ältesten Wallfahrtsorte Liguriens, mit Hotel und Restaurant.",
-      "drawCap": "Schnitt, Westansicht und Obergeschoss mit Lage der Klimageräte"
+      "drawCap": "Schnitt, Westansicht und Obergeschoss mit Lage der Klimageräte",
+      "plansTitle": "Weitere Pläne"
     },
     "en": {
       "metaTitle": "Rustico with sea view in Monterosso al Mare · €185,000",
@@ -438,7 +439,8 @@
       ],
       "areaTitle": "The neighbourhood",
       "areaText": "Just a few steps away lies the Santuario Nostra Signora di Soviore, one of the oldest pilgrimage sites in Liguria, with hotel and restaurant.",
-      "drawCap": "Section, west elevation and upper floor showing the air conditioning units"
+      "drawCap": "Section, west elevation and upper floor showing the air conditioning units",
+      "plansTitle": "More plans"
     },
     "it": {
       "metaTitle": "Rustico con vista mare a Monterosso al Mare · 185.000 €",
@@ -579,7 +581,8 @@
       ],
       "areaTitle": "I dintorni",
       "areaText": "A pochi passi si trova il Santuario Nostra Signora di Soviore, uno dei luoghi di pellegrinaggio più antichi della Liguria, con hotel e ristorante.",
-      "drawCap": "Sezione, prospetto ovest e primo piano con la posizione dei climatizzatori"
+      "drawCap": "Sezione, prospetto ovest e primo piano con la posizione dei climatizzatori",
+      "plansTitle": "Altri disegni"
     },
     "fr": {
       "metaTitle": "Rustico avec vue mer à Monterosso al Mare · 185 000 €",
@@ -720,7 +723,8 @@
       ],
       "areaTitle": "Les environs",
       "areaText": "À quelques pas se trouve le Santuario Nostra Signora di Soviore, l'un des plus anciens lieux de pèlerinage de Ligurie, avec hôtel et restaurant.",
-      "drawCap": "Coupe, façade ouest et étage avec l'emplacement des climatiseurs"
+      "drawCap": "Coupe, façade ouest et étage avec l'emplacement des climatiseurs",
+      "plansTitle": "Autres plans"
     }
   },
   "price_display": "185.000 €",
@@ -826,5 +830,28 @@
       "it": "Germania"
     },
     "email": "info@flynne.de"
-  }
+  },
+  "plans": [
+    {
+      "f": "lageplan-bestand.jpg",
+      "de": "Lageplan und Ansichten, Bestand (Januar 2021)",
+      "en": "Site plan and elevations, existing state (January 2021)",
+      "fr": "Plan de situation et façades, état existant (janvier 2021)",
+      "it": "Planimetria e prospetti, stato attuale (gennaio 2021)"
+    },
+    {
+      "f": "lageplan-projekt.jpg",
+      "de": "Lageplan mit Außenanlage, Zaun und Pergola, Projekt (April 2021)",
+      "en": "Site plan with garden, fence and pergola, project (April 2021)",
+      "fr": "Plan de situation avec jardin, clôture et pergola, projet (avril 2021)",
+      "it": "Planimetria con sistemazione esterna, recinzione e pergola, progetto (aprile 2021)"
+    },
+    {
+      "f": "katasterplan.jpg",
+      "de": "Katasterplan Monterosso al Mare, Blatt 7, Parzellen 265 und 44",
+      "en": "Cadastral map Monterosso al Mare, sheet 7, parcels 265 and 44",
+      "fr": "Plan cadastral Monterosso al Mare, feuille 7, parcelles 265 et 44",
+      "it": "Estratto di mappa catastale, Monterosso al Mare, foglio 7, particelle 265 e 44"
+    }
+  ]
 }

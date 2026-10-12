@@ -33,6 +33,10 @@ def page(lang):
     facts = "".join(f"<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>" for k, v in t["facts"])
     intro = "".join(f"<p>{e(p)}</p>" for p in t["intro"])
     dist = "".join(f"<li><span>{e(k)}</span><span>{e(v)}</span></li>" for k, v in t["dist"])
+    plans = "".join(
+        f'<figure class="draw"><a href="{base}plaene/{x["f"]}" target="_blank" rel="noopener"><img src="{base}plaene/{x["f"]}" alt="{e(x[lang])}" loading="lazy"></a><figcaption>{e(x[lang])}</figcaption></figure>'
+        for x in C["plans"]
+    )
     equip = "".join(f"<li>{e(x)}</li>" for x in t["equip"])
     steps = "".join(
         f"<li><span class=\"num\">{i + 1}</span><h3>{e(k)}</h3><p>{e(v)}</p></li>"
@@ -139,6 +143,7 @@ def page(lang):
     <h3 class="equip-title">{e(t["equipTitle"])}</h3><ul class="equip">{equip}</ul></div>
   <a class="plan-img" href="{base}grundriss.png" target="_blank" rel="noopener"><img src="{base}grundriss.png" alt="{e(t["planTitle"])}" width="880" height="1260" loading="lazy"></a>
   <figure class="draw"><a href="{base}schnitt.jpg" target="_blank" rel="noopener"><img src="{base}schnitt.jpg" alt="{e(t["drawCap"])}" width="1289" height="752" loading="lazy"></a><figcaption>{e(t["drawCap"])}</figcaption></figure>
+  <div class="plans"><h3 class="equip-title">{e(t["plansTitle"])}</h3><div class="plans-grid">{plans}</div></div>
 </section>
 
 <section class="gallery" id="bilder">
