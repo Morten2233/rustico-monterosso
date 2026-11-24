@@ -126,7 +126,7 @@ def page(lang):
     <h1>{e(t["title"])}</h1>
     <p class="lead">{e(t["lead"])}</p>
     <div class="hero-row">
-      <div class="price"><small>{e(t["price"])}</small><strong>{t["priceDisplay"]}</strong></div>
+      <div class="price"><small>{e(t["price"])}</small><strong>{C["price_display"]}</strong></div>
       <a class="visit-cta" href="#kontakt">{e(t["ctaVisit"])} <span aria-hidden="true">→</span></a>
       <button type="button" class="sound-cta" id="soundBtn"><span class="play" aria-hidden="true"><svg width="12" height="14" viewBox="0 0 12 14"><path d="M1 1l10 6-10 6z" fill="currentColor"/></svg></span>{e(t["ctaSound"])}</button>
     </div>
@@ -190,7 +190,7 @@ def page(lang):
   </div>
 </section>
 </main>
-<div class="mbar" id="mbar"><div><small>{e(t["price"])}</small><strong>{t["priceDisplay"]}</strong></div><a href="#kontakt">{e(t["ctaVisit"])} →</a></div>
+<div class="mbar" id="mbar"><div><small>{e(t["price"])}</small><strong>{C["price_display"]}</strong></div><a href="#kontakt">{e(t["ctaVisit"])} →</a></div>
 <footer class="foot"><div class="wrap"><span>{e(t["footer"])}</span><span class="flinks">{foot_links}</span><a href="#top" aria-label="top">↑</a></div></footer>
 
 <div class="modal" id="videoModal" hidden><div class="modal-in"><button type="button" class="close" data-close>{e(t["close"])} ✕</button><video id="modalVideo" controls playsinline></video></div></div>

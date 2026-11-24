@@ -159,7 +159,7 @@
   ],
   "t": {
     "de": {
-      "metaTitle": "Rustico mit Meerblick in Monterosso al Mare · 169.000 € VHB",
+      "metaTitle": "Rustico mit Meerblick in Monterosso al Mare · 185.000 €",
       "metaDesc": "Komplett saniertes Rustico aus zwei Steinhäusern hoch über Monterosso, Cinque Terre. Parkplatz am Haus, 11 Minuten zum Strand.",
       "nav": {
         "house": "Das Haus",
@@ -172,7 +172,6 @@
       "title": "Rustico-Ensemble hoch über Monterosso",
       "lead": "Zwei kleine, komplett sanierte Steinhäuser mit Blick auf die Bucht. Parkplatz direkt am Haus, 11 Minuten zum Strand.",
       "price": "Kaufpreis",
-      "priceDisplay": "169.000 € VHB",
       "ctaVisit": "Besichtigung anfragen",
       "ctaSound": "Rundgang mit Ton ansehen",
       "close": "Schließen",
@@ -302,7 +301,7 @@
       "plansTitle": "Weitere Pläne"
     },
     "en": {
-      "metaTitle": "Rustico with sea view in Monterosso al Mare · €169,000 o.n.o.",
+      "metaTitle": "Rustico with sea view in Monterosso al Mare · €185,000",
       "metaDesc": "Fully renovated rustico of two stone houses high above Monterosso, Cinque Terre. Parking at the house, 11 minutes to the beach.",
       "nav": {
         "house": "The house",
@@ -315,7 +314,6 @@
       "title": "Rustico ensemble high above Monterosso",
       "lead": "Two small, fully renovated stone houses overlooking the bay. Parking right at the house, 11 minutes to the beach.",
       "price": "Price",
-      "priceDisplay": "€169,000 o.n.o.",
       "ctaVisit": "Request a viewing",
       "ctaSound": "Watch the tour with sound",
       "close": "Close",
@@ -445,7 +443,7 @@
       "plansTitle": "More plans"
     },
     "it": {
-      "metaTitle": "Rustico con vista mare a Monterosso al Mare · 169.000 € trattabili",
+      "metaTitle": "Rustico con vista mare a Monterosso al Mare · 185.000 €",
       "metaDesc": "Rustico completamente ristrutturato, due case in pietra sopra Monterosso, Cinque Terre. Parcheggio accanto alla casa, 11 minuti dalla spiaggia.",
       "nav": {
         "house": "La casa",
@@ -458,7 +456,6 @@
       "title": "Rustico in pietra sopra Monterosso",
       "lead": "Due piccole case in pietra completamente ristrutturate con vista sulla baia. Parcheggio accanto alla casa, 11 minuti dalla spiaggia.",
       "price": "Prezzo",
-      "priceDisplay": "169.000 € trattabili",
       "ctaVisit": "Richiedi una visita",
       "ctaSound": "Guarda il tour con audio",
       "close": "Chiudi",
@@ -588,7 +585,7 @@
       "plansTitle": "Altri disegni"
     },
     "fr": {
-      "metaTitle": "Rustico avec vue mer à Monterosso al Mare · 169 000 € à débattre",
+      "metaTitle": "Rustico avec vue mer à Monterosso al Mare · 185 000 €",
       "metaDesc": "Rustico entièrement rénové, deux maisons en pierre au-dessus de Monterosso, Cinque Terre. Parking devant la maison, 11 minutes de la plage.",
       "nav": {
         "house": "La maison",
@@ -601,7 +598,6 @@
       "title": "Rustico en pierre au-dessus de Monterosso",
       "lead": "Deux petites maisons en pierre entièrement rénovées avec vue sur la baie. Parking devant la maison, 11 minutes de la plage.",
       "price": "Prix",
-      "priceDisplay": "169 000 € à débattre",
       "ctaVisit": "Demander une visite",
       "ctaSound": "Voir la visite avec le son",
       "close": "Fermer",
@@ -731,8 +727,8 @@
       "plansTitle": "Autres plans"
     }
   },
-  "price_display": "169.000 € VHB",
-  "price_num": "169000",
+  "price_display": "185.000 €",
+  "price_num": "185000",
   "area_photos": [
     {
       "n": "26",
